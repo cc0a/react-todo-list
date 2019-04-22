@@ -7,8 +7,8 @@ import TodoList from "./components/TodoList";
 class App extends Component {
   state={
     items:[],
-    id: uuid(),
     item: '',
+    id: uuid(),
     editItem: false
   };
   handleChange = (e) => {
@@ -29,7 +29,7 @@ this.setState({
   item: '', // erase item entry field for new item
   id:uuid(), // reset id for new item
   editItem: false
-},() => console.log(this.state))
+})
 
   };
   clearList = () => {
